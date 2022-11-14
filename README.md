@@ -22,6 +22,7 @@ exceptionFile='exceptions.txt'
 In MYSQL_QUERY {#pattern#} will be replaced by the regexp passed by the app, and {#searchString#} will be replaced by query term you're looking
 For regexp instruction read https://dev.mysql.com/doc/refman/8.0/en/regexp.html
 
+```
 API Endpoint      Methods  Rule
 ----------------  -------  -----------------------
 deleteBase        GET      /api/delete/<base>
@@ -42,3 +43,6 @@ searchException   GET      /search
 static            GET      /static/<path:filename>
 tmpSave           GET      /save
 view              GET      /api/view/<base>
+```
+
+DONT'USE IN PRODUCTION
