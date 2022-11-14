@@ -1,7 +1,6 @@
 # sphixsearch_exceptions
 Sphinxsearch Exceptions Editor
 
-
 This is a small web app to manage, easily than a text editor, and find new exception to handle.
 
 To install:
@@ -10,18 +9,18 @@ python3 -m venv venv
 pip3 install flask flask_mysqldb
 
 
-Edit settings:
+Edit settings.py file with you mysql account:
+```
 MYSQL_HOST = '127.0.0.1'
 MYSQL_USER = 'root'
 MYSQL_PASSWORD = 'mySecretPWD'
 MYSQL_DB = 'myDB'
-## USE {#pattern#} for the regexp and {#searchString#} for the search 
-## For regexp instruction read https://dev.mysql.com/doc/refman/8.0/en/regexp.html
-
 MYSQL_QUERY='''select distinct REGEXP_SUBSTR(title,'{#pattern#}') from mytable where title like '%{#searchString#}%' limit 100'''
-#exceptionFile='/home/sphinxsearch/etc/exceptions.txt'
 exceptionFile='exceptions.txt'
+```
 
+In MYSQL_QUERY {#pattern#} will be replaced by the regexp passed by the app, and {#searchString#} will be replaced by query term you're looking
+For regexp instruction read https://dev.mysql.com/doc/refman/8.0/en/regexp.html
 
 API Endpoint      Methods  Rule
 ----------------  -------  -----------------------
