@@ -4,9 +4,11 @@ Sphinxsearch Exceptions Editor
 This is a small web app to manage, easily than a text editor, and find new exception to handle.
 
 To install:
+```
 python3 -m venv venv
 . ./venv/bin/activate
 pip3 install flask flask_mysqldb
+```
 
 
 Edit settings.py file with you mysql account:
