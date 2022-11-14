@@ -19,7 +19,8 @@ MYSQL_QUERY='''select distinct REGEXP_SUBSTR(title,'{#pattern#}') from mytable w
 exceptionFile='exceptions.txt'
 ```
 
-In MYSQL_QUERY {#pattern#} will be replaced by the regexp passed by the app, and {#searchString#} will be replaced by query term you're looking
+In MYSQL_QUERY {#pattern#} will be replaced by the regexp passed by the app, and {#searchString#} will be replaced by query term you're looking.
+
 For regexp instruction read https://dev.mysql.com/doc/refman/8.0/en/regexp.html
 
 ```
