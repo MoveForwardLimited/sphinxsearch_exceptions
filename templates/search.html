@@ -1,0 +1,44 @@
+<html>
+    {% include 'head.html' %}
+    <body>
+        <div id="wrapper">
+        {% include 'header.html' %}
+        <form action="/add" method="POST">
+            <div style="text-align: center;">
+            <table class="add">
+                <tbody>
+                <tr>
+                    <td>Search For:</td>
+                    <td><input id="searchFor" name="for" type="text" width="128" value=""><br /></td>
+                </tr>
+                <tr>
+                    <td>Pattern:</td>
+                    <td><textarea id="searchPattern" name="pattern"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value=" Search " class="butInput" onclick="searchException()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td>Base:</td>
+                    <td><input id="base" name="base" type="text" width="128" value="{{key}}"><br /></td>
+                </tr>
+                <tr>
+                    <td>List:</td>
+                    <td><textarea id="lista" name="lista">{%for x in item%}{{x+"\n"}}{%endfor%}</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value=" Save " class="butInput" onclick="sendException()"></td>
+                </tr>                
+                </tbody>
+            </table>
+            </div>
+        </form>
+        </div>
+        {% include 'notifications.html' %}
+    </body>
+</html>

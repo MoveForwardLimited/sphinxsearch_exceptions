@@ -1,0 +1,16 @@
+<div class="exceptionList">
+{%for i in exceptionList.keys()|sort %}
+<div class="exceptionItem" id="{{"exc_"+(i|replace(" ",'_'))}}">
+    <div class="exceptionTitle"><a href="/add/{{i|urlencode}}">{{i}}</a>
+        <span class="right">
+            <a onclick="deleteException('{{i}}')"><span class="material-symbols-sharp icon">delete</span></a>
+        </span>
+    </div>
+    <div class="exceptionContent">
+    {%for x in exceptionList[i]%}
+            <span class="item">{{ x }}</span>
+    {%endfor%}
+    </div>
+</div>
+{%endfor%}
+</div>

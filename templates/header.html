@@ -1,0 +1,33 @@
+<div id="header">
+    <div id="logo">
+		<a href="/">
+		<span>Exceptions</span>
+        <img src={{ url_for('static', filename='logo.png')}} alt="Exceptions"/> 
+		</a>
+	</div>
+    <ul id="topnav">
+        <li>
+            <a href="/">Exceptions</a>
+                    <ul>
+                        <li><a href="/search">Search</a></li>		
+                        <li><a href="/add">Add Exception</a></li>		
+                    </ul>
+        </li>
+        <li class="end">
+            <div>
+                <a onclick="reloadException()"><span class="material-symbols-sharp icon">restart_alt</span></a>
+            </div>
+        </li>
+        <li class="end">
+            <div>
+                <a onclick="publishException()"><span class="material-symbols-sharp icon">file_upload</span></a>
+            </div>
+        </li>
+        <li class="end">
+            <div id="publishAlert">
+                <a><span class="material-symbols-sharp">done_all</span></a>
+            </div>
+        </li>
+    </ul>
+
+</div>

@@ -1,0 +1,27 @@
+<html>
+    {% include 'head.html' %}
+    <body>
+        <div id="wrapper">
+        {% include 'header.html' %}
+            <div style="text-align: center;">
+            <table class="add">
+                <tbody>
+                <tr>
+                    <td>Base:</td>
+                    <td><input id="base" name="base" type="text" width="128"><br /></td>
+                </tr>
+                <tr>
+                    <td>List:</td>
+                    <td><textarea id="lista" name="lista"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value=" Save " class="butInput" onclick="sendException()"></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        {% include 'notifications.html' %}
+    </body>
+</html>
