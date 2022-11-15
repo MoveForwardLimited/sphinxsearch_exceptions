@@ -1,7 +1,8 @@
 # Sphixsearch Exceptions
 Sphinxsearch Exceptions Editor
 
-This is a small web app to manage, easily than a text editor, and find new exception to handle.
+This is a small web app to manage Sphinxsearch exceptions (https://sphinxsearch.com/). 
+Easily than a text editor, with the feature to find new exception to handle.
 
 To install:
 ```
