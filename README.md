@@ -1,4 +1,4 @@
-# sphixsearch_exceptions
+# Sphixsearch Exceptions
 Sphinxsearch Exceptions Editor
 
 This is a small web app to manage, easily than a text editor, and find new exception to handle.
