@@ -27,6 +27,8 @@ In MYSQL_QUERY {#pattern#} will be replaced by the regexp passed by the app, and
 
 For regexp instruction read https://dev.mysql.com/doc/refman/8.0/en/regexp.html
 
+## API
+
 ```
 API Endpoint      Methods  Rule
 ----------------  -------  -----------------------
@@ -38,7 +40,11 @@ reload            GET      /api/reload
 reloadExceptions  GET      /api/reload
 save              POST     /api/view
 search            POST     /api/search
+```
 
+## APP
+
+```
 APP Endpoint      Methods  Rule
 ----------------  -------  -----------------------
 root              GET      /
