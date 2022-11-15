@@ -8,6 +8,8 @@ To install:
 python3 -m venv venv
 . ./venv/bin/activate
 pip3 install flask flask_mysqldb
+export FLASK_APP=main.py
+flask run
 ```
 
 
